@@ -26,6 +26,11 @@ app.use(express.json());
    * NoSQL: MongoDB, CouchDB, ...
    */
 
+   /**
+    * Driver: SELECT * FROM users
+    * Query Builder: table('users').select('*').where()
+    */
+
 app.post('/users', (req, res) => {
   const body = req.body;
 
